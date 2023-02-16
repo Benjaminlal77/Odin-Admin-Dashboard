@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,10 @@
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <aside class="sidebar">
+  <div class="flex-container">
+    <aside class="sidebar">
       <div class="logo">
         <img src="./icons/view-dashboard-custom.png" alt="Dashboard image">
         <h1>Dashboard</h1>
@@ -35,6 +38,19 @@
         <img src="./icons/shield-check-custom.png" alt="Privacy img">
         <h1>Privacy</h1>
       </div>
-  </aside>
+    </aside>
+    <header>
+      <form action="" method="GET" class="search-container">
+        <img src="./icons/magnify.svg" alt="Search Img">
+        <input type="text" name="search-bar" class="search-bar" placeholder="Search">
+      </form>
+      <div class="profile-container">
+        <img src="./icons/bell.svg" alt="Bell img">
+        <img src="./avatars/1.png" alt="Profile img">
+        <h2>Username123</h2>
+      </div>
+    </header>
+  </div>
 </body>
+
 </html>
