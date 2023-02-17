@@ -78,18 +78,36 @@ header {
 }
 .introduction-container {
   display: grid;
+  height: 100%;
   grid-template-columns: 100px 1fr;
   grid-template-rows: 30px 70px;
   column-gap: 30px;
 }
 
 .introduction-container img {
-  grid-row: span 2
+  grid-row: span 2;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons button {
+  font-size: 1rem;
+  background-color: #1992d4;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  width: 25%;
+  height: 35px;
 }
 
 @media (max-width: 900px){
   .sidebar {
     width: 100px;
+    min-width: 100px;
     transition: .3s;
   }
   .sidebar h1 {
