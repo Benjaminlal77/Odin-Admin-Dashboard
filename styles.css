@@ -114,6 +114,7 @@ header {
   display: grid;
   grid-template-columns: 2.2fr 1fr;
   grid-row: 1fr 1fr;
+  gap: 15px;
 }
 
 .content-container {
@@ -138,16 +139,26 @@ header {
   gap: 20px;
 }
 .project {
-  border-radius: 10px;
   border-left:solid 10px ;
   border-color: #f0b429;
+}
+.project, 
+.announcements {
+  border-radius: 10px;
   background-color: #ffffff;
   padding: 0 20px;
 }
+
 .shadow {
   box-shadow: 3.5px 7.0px 7.0px hsl(0deg 0% 0% / 0.39);
 }
-
+.sticky {
+  top:10px;
+  position: sticky;
+}
+.announcements {
+  
+}
 @media (max-width: 900px){
   .container {
     grid-template-columns: 100px 1fr;
